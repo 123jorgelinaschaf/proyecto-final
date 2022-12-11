@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #6a7b67;
+}
+
+/* estilo logo header */
+.logo {
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+/*Estilo header*/
+header {
+    background-color: #fffbec;
+}
+
+/*Estilo barra de navegacion*/
+.navbar{
+    background-color: #6a7b67;
+}
+.nav-link{
+    color: #C8DBCD;
+    display: flex;
+    justify-content: space-around;
+}
+#opciones{
+    justify-content: center;
+}
+/*Estilo footer*/
+footer {
+    background-color: #6a7b67;
+    color: #C8DBCD;
+}
+
+.p-footer {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center
+}
+
+/*Estilo boton flotante wsp*/
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+
+/*Estilo formulario página pedidos*/
+.body-pedidos{
+    background-color: #fff;
+}
+.container-form{
+    width: 900px;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+
+.titulo-formulario{
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: #4c584a;
+}
+
+.p-formulario {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.campo, .campo-textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #6a7b67;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.campo-textarea{
+   max-width: 530px;
+   min-width: 530px;
+   min-height: 140px;
+   max-height: 140px; 
+}
+
+.btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #6a7b67;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin: 5px;
+}
+
+.btn-enviar:hover{
+    background: #4c584a;
+}
+
+/*Estilo carrusel index*/
+.img-carrusel{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+/*Estilo card propaganda index*/
+.img-card-index{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius : 5px 5px 0 0;
+}
+.card:hover{
+    transform: scale(0.9);
+    transition: all 500ms
+}
+.card-title-propaganda{
+    text-align: center;
+}
+.card{
+    margin-top: 5px;
+}
+.btn-index{
+    text-decoration: none;
+    color: #4c584a;
+}
+.btn-index:hover{
+    color: #6a7b67;
+}
+/*Estilo card productos pagina productos*/
+.img-card-producto{
+    width:10rem;
+    padding: 10px;
+}
+.card-producto{
+    width: 12rem;
+    height: 17rem;
+    margin: 5px;
+    border: solid 1px #acc4c0;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.card-producto:hover{
+    box-shadow: 2px 2px 4px;
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+.card-title-producto{
+    text-align: center;
+}
+.card-text-producto{
+    text-align: center;
+}
+
+/*Estilo card-group pagina productos*/
+.card-group{
+    justify-content: center;
+    border: solid 2px #4c584a;
+    border-radius: 0 0 15px 15px;
+    background-color: #4c584a;
+    width: 900px;
+}
+
+/*Estilo p-titulo pagina productos*/
+.p-titulo{
+    color: #C8DBCD;
+    font-size: 30px;
+    text-align: center;
+    border: solid 1px #4c584a;
+    background-color: #4c584a;
+    border-radius: 15px 15px 0 0;
+    margin: 5px 0 0 0;
+}
+
+/*Estilo titulo pagina quienes somos*/
+.titulo-quienes-somos{
+    font-size: 30px;
+}
+.quienes-somos{
+    text-align: center;
+    border: solid 1px #4c584a;
+    background-color: #4c584a;
+    color: #C8DBCD;
+    width: 900px;
+    border-radius: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+        
+}
+
+/*Estilo tabla pagina quienes somos*/
+.tabla{
+    margin: auto;
+    border: solid 5px #6a7b67;
+    background-color: #6a7b67;
+}
+
+.estilo-tabla{
+    border: solid 5px #6a7b67;
+}
+.img-tabla{
+    object-fit: cover;
+}
+.h5-tabla{
+    color: #acc4c0;
+}
+
+/*Estilo contacto*/
+.contacto{
+    font-size: 10px;
+}
+
+.fa, .fa-solid{
+    font-size: 15px;
+}
+
+/*Estilo aside*/
+aside{
+    width:20%;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #4c584a;
+    float: right;
+    position: sticky;
+    top: 0px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.img-aside{
+    width: 85%;
+    border-radius: 15px;
+
+}
+
+.h7-aside{
+    text-align: center;
+    display: inline-block;
+    color: #acc4c0;
+}
+/*Estilo contenedor principal*/
+.contenedor-principal {
+    width: 75%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 0px;
+    float: left;
+    display: flex;
+}

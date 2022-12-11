@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Natural</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--link a fontawesome-->
+    <script src="https://kit.fontawesome.com/7d367c0822.js" crossorigin="anonymous"></script>
+    <!--Link a mi CSS-->
+        <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="body-index">
+    <header>
+        <a href="./index.html"><img class="logo" src="./imagenes/Logo-proyecto1.png" alt="logo"></a>
+        <!--BARRA DE NAVEGACIÓN-->
+        <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="opciones">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/quienes somos.html">Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/pedidos.html">Pedidos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedor-principal">
+            <section>
+                <article class="1">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./imagenes/slide1.png" class="img-carrusel" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/slide2.png" class="img-carrusel" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/slide3.png" class="img-carrusel" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="2">
+                    <div class="card">
+                        <a class="btn-index" href="./paginas/productos.html">
+                        <img src="./imagenes/NotCo.png" class="img-card-index" alt="Producos NotCo">
+                        <div class="card-body-propaganda">
+                            <h5 class="card-title-propaganda">Productos NotCo</h5>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card mb-3">
+                        <a class="btn-index" href="./paginas/productos.html">
+                        <img src="./imagenes/frutos-secos.jpg" class="img-card-index" alt="Frutos secos">
+                        <div class="card-body-propaganda">
+                            <h5 class="card-title-propaganda">Frutos secos y desecados</h5>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card mb-3">
+                        <a class="btn-index" href="./paginas/productos.html">
+                        <img src="./imagenes/congelados.jpg" class="img-card-index" alt="Fruas y verduras congeladas"></a>
+                        <div class="card-body-propaganda">
+                            <h5 class="card-title-propaganda">Frutas y verduras congeladas</h5>
+                        </div>
+                        </a>
+                    </div>
+                </article>
+            </section>
+        <aside>
+            <h7 class="h7-aside">Descargando este archivo y presentandolo en el local tenes 30% de descuento</h7>
+            <a href="./descargables/Descuento.pdf" download="descargables/Descuento.pdf"><img class="img-aside" src="./imagenes/img-descuento.png" alt="Archivo descuento"></a>
+        </aside>
+    </div>
+    <footer>
+        <a href="https://api.whatsapp.com/send?phone=3364387327" class="btn-wsp" target="_blank">
+            <i class="fa-brands fa-whatsapp" onclick="return salir()"></i></a>
+        <p class="p-footer">Página creada por Jorgelina Schaf</p>
+        <p class="p-footer">Proyecto final</p>
+        <p class="p-footer">&copy; 2022 Tienda Natural</p>
+    </footer>
+    <script>
+         var edad = parseInt(prompt('¿Cuál es su edad?'));
+            if (edad < 18) {
+                alert('El contenido de esta pagina es para mayores de 18 años, entra bajo su responsabilidad.');
+            } else {
+                alert('Bienvenido a Almecen Natural');
+            }
+    </script>
+    <script src="./script/script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+</html>

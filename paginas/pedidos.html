@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--link a fontawesome-->
+    <script src="https://kit.fontawesome.com/7d367c0822.js" crossorigin="anonymous"></script>
+    <!--Link a mi CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="body-pedidos">
+    <header>
+        
+        <a href="../index.html"><img class="logo" src="../imagenes/Logo-proyecto1.png" alt="logo"></a>
+        <!--BARRA DE NAVEGACIÓN-->
+        <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="opciones">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/quienes somos.html">Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/pedidos.html">Pedidos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedor-principal">
+        <main>
+            <div class="container-form">
+                <div class="info-form">
+                    <h2 class="titulo-formulario">¿Cómo hacer un pedido?</h2>
+                    <p class="p-formulario">Llene el formulario con los datos solicitados, a la brevedad nos pondremos en contacto para coordinar envío, total a pagar y confirmar stock.</p>
+                </div>
+                <form action="">
+                    <input type="text" name="nombre"
+                    placeholder="Ingrese su nombre" class="campo">
+                    <input type="tel" name="telefono" placeholder="Ingrese su numero de teléfono" class="campo" required>
+                    <input type="email" name="email"
+                    placeholder="Ingrese su correo electrónico"
+                    class="campo">
+                    <textarea class="campo-textarea" name="mensaje" placeholder="Ingrese su pedido"></textarea>
+                    <input type="submit" name="enviar"
+                    value="Enviar pedido" class= "btn-enviar" >
+                </form>
+            </div>
+        </main>
+        <aside>
+            <h7 class="h7-aside">Descargando este archivo y presentandolo en el local tenes 30% de descuento</h7>
+            <a href="../descargables/Descuento.pdf" download="descargables/Descuento.pdf"><img class="img-aside"
+                    src="../imagenes/img-descuento.png" alt="Archivo descuento"></a>
+        </aside>
+    </div>
+    <footer>
+        <a href="https://api.whatsapp.com/send?phone=3364387327" class="btn-wsp" target="_blank">
+            <i class="fa-brands fa-whatsapp" onclick="return salir()"></i>
+        </a>
+        <p class="p-footer">Página creada por Jorgelina Schaf</p>
+        <p class="p-footer">Proyecto final</p>
+        <p class="p-footer">&copy; 2022 Tienda Natural</p>
+    </footer>
+    <!--link a mi js-->
+    <script src="../script/script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+    </body>
+    
+    </html>
