@@ -267,13 +267,14 @@ aside{
 }
 
 .h7-aside{
+    margin: 5px;
     text-align: center;
     display: inline-block;
     color: #acc4c0;
 }
 /*Estilo contenedor principal*/
 .contenedor-principal {
-    width: 75%;
+    width: 900px;
     max-width: 1200px;
     margin: auto;
     margin-top: 0px;
