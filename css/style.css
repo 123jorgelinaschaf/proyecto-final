@@ -10,7 +10,14 @@ body {
     min-height: 100vh;
     background-color: #6a7b67;
 }
-
+/*Estilo imagen body*/
+.body-index{
+    background-image: url(../imagenes/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 /* estilo logo header */
 .logo {
     display: block;
@@ -39,7 +46,6 @@ footer {
     background-color: #6a7b67;
     color: #C8DBCD;
 }
-
 .p-footer {
     margin-top: 20px;
     font-size: 15px;
@@ -62,7 +68,6 @@ footer {
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
     z-index: 100;
 }
-
 .btn-wsp:hover{
     text-decoration: none;
     color: #0df053;
@@ -82,19 +87,16 @@ footer {
     grid-gap: 50px;
     margin-top: 90px;
 }
-
 .titulo-formulario{
     margin-bottom: 15px;
     font-size: 35px;
     color: #4c584a;
 }
-
 .p-formulario {
     font-size: 17px;
     line-height: 1.6;
     margin-bottom: 30px;
 }
-
 .campo, .campo-textarea{
     width: 100%;
     padding: 15px 10px;
@@ -104,14 +106,12 @@ footer {
     border-radius: 3px;
     outline: 0px;
 }
-
 .campo-textarea{
    max-width: 530px;
    min-width: 530px;
    min-height: 140px;
    max-height: 140px; 
 }
-
 .btn-enviar{
     padding: 15px;
     font-size: 16px;
@@ -124,7 +124,6 @@ footer {
     transition: all 300ms ease;
     margin: 5px;
 }
-
 .btn-enviar:hover{
     background: #4c584a;
 }
@@ -136,6 +135,7 @@ footer {
     border-radius: 5px;
     margin-bottom: 12px;
 }
+
 /*Estilo card propaganda index*/
 .img-card-index{
     width: 100%;
@@ -160,6 +160,7 @@ footer {
 .btn-index:hover{
     color: #6a7b67;
 }
+
 /*Estilo card productos pagina productos*/
 .img-card-producto{
     width:10rem;
@@ -172,17 +173,12 @@ footer {
     border: solid 1px #acc4c0;
     border-radius: 15px;
     background-color: #fff;
+    text-align: center;
 }
 .card-producto:hover{
     box-shadow: 2px 2px 4px;
     transform: scale(1.1);
     transition: all 500ms;
-}
-.card-title-producto{
-    text-align: center;
-}
-.card-text-producto{
-    text-align: center;
 }
 
 /*Estilo card-group pagina productos*/
@@ -192,6 +188,7 @@ footer {
     border-radius: 0 0 15px 15px;
     background-color: #4c584a;
     width: 900px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /*Estilo p-titulo pagina productos*/
@@ -203,11 +200,13 @@ footer {
     background-color: #4c584a;
     border-radius: 15px 15px 0 0;
     margin: 5px 0 0 0;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 /*Estilo titulo pagina quienes somos*/
 .titulo-quienes-somos{
     font-size: 30px;
+    margin-top: 30px;
 }
 .quienes-somos{
     text-align: center;
@@ -220,7 +219,10 @@ footer {
     font-size: 20px;
         
 }
-
+/*Estilo video-quienes-somos*/
+.video-quienes-somos{
+    width: 500px;
+}
 /*Estilo tabla pagina quienes somos*/
 .tabla{
     margin: auto;
@@ -239,12 +241,9 @@ footer {
 }
 
 /*Estilo contacto*/
-.contacto{
-    font-size: 10px;
-}
-
-.fa, .fa-solid{
+.titulo-contacto{
     font-size: 15px;
+
 }
 
 /*Estilo aside*/
@@ -258,6 +257,7 @@ aside{
     top: 0px;
     margin-left: 15px;
     text-align: center;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .img-aside{
